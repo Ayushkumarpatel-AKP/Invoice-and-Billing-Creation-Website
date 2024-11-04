@@ -188,4 +188,4 @@ exportToCSVButton.addEventListener("click", function () {
     link.click();
     document.body.removeChild(link);
 });
-"This entire code was written by me and taking little help from youtube, and I developed the logic. I categorized the entire JavaScript code according to its functionality and presented it nicely for you."
+ 
