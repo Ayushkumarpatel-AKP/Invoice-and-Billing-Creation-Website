@@ -48,6 +48,9 @@ h2 {
     font-size: 1.8em;
     text-shadow: 0 0 5px rgba(255, 243, 15, 0.7);
     font-family: Anton SC;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 input[type="text"], input[type="number"], textarea, select {
