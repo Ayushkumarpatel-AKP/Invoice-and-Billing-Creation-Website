@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoicing and Billing System for Businesses</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <a href="https://github.com/Ayushkumarpatel-AKP" target="_blank" style="text-decoration: none; color: inherit;">
+        <div class="profile">
+            <img src="https://th.bing.com/th/id/OIP.wDrGygU4WDK9CpssMpJaswHaHa?rs=1&pid=ImgDetMain" alt="GitHub Logo" style="width: 40px; height: 40px;"> 
+            <span>AKP</span> 
+            <span style="color: BLUE;">(DEVLOPER)</span> 
+        </div>
+    </a>
+    <div class="container">
+        <header>
+            <h1>Invoicing and Billing System for Businesses</h1>
+        </header>
+        <div class="snake"></div>
+    
+
+        <section class="invoice-form">
+            <h2>--------------------------------CREATE INVOICE---------------------------------- </h2>
+            <input type="text" id="clientName" placeholder="Client Name" required>
+            <textarea id="clientAddress" placeholder="Client Address" required></textarea>
+            <div class="item-input">
+                <input type="text" id="itemName" placeholder="Item Name" required>
+                <select id="defaultItems" class="dropdown">
+                    <option value="">Select a predefined product</option>
+                    <option value="Product 1">Product 1 - ₹50</option>
+                    <option value="Product 2">Product 2 - ₹75</option>
+                    <option value="Product 3">Product 3 - ₹100</option>
+                    <option value="Product 4">Product 4 - ₹150</option>
+                    <option value="Product 5">Product 5 - ₹200</option>
+                </select>
+                <input type="number" id="itemQuantity" placeholder="Quantity" min="0" required>
+                <input type="number" id="itemPrice" placeholder="Price (₹)" min="0" required>
+                <button id="addItem">Add Item</button>
+            </div>
+            <div id="itemList"></div>
+            <input type="number" id="tax" placeholder="Tax (%)" min="0" value="0">
+            <button id="generateInvoice">Generate Invoice</button>
+            <button id="downloadAllInvoices">Download All Invoices as PDF</button>
+            <button id="exportToCSV">Export to CSV</button>
+        </section>
+
+        <div id="invoicesContainer"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="script.js"></script> 
+</body>
+</html>
